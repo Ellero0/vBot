@@ -566,6 +566,8 @@ if true then
             voc = "EK"
         elseif text:lower():find("paladin") then
             voc = "RP"
+        elseif text:lower():find("no vocation") then
+            voc = "None"
         end
         local creature = getCreatureByName(name)
         if creature then
